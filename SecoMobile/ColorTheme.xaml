@@ -1,0 +1,18 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SecoMobile">
+
+    <SolidColorBrush x:Key="MainColor" Color="#185433"/>
+    <SolidColorBrush x:Key="BackColor" Color="#F7F7F7"/>
+    <SolidColorBrush x:Key="SecondaryColor" Color="#217346"/>
+    <SolidColorBrush x:Key="SubColor" Color="#B1B1B1"/>
+    <SolidColorBrush x:Key="SecondarySubColor" Color="#D464E8"/>
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+            <SolidColorBrush x:Key="ApplicationPageBackgroundThemeBrush" Color="#F7F7F7" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+</ResourceDictionary>

@@ -1,0 +1,40 @@
+﻿<ContentDialog
+    x:Class="SecoMobile.InsertManholeDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SecoMobile"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="REGISTRAR"
+    PrimaryButtonText="registrar"  
+    SecondaryButtonText="cancelar"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
+    SecondaryButtonClick="ContentDialog_SecondaryButtonClick"
+    Background="{StaticResource MainColor}">
+
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <TextBox x:Name="id" Header="Id do dispositivo"/>
+        <TextBox x:Name="name" Header="Descrição"/>
+        <TextBox x:Name="street" Header="Rua"/>
+        <Grid Margin="0,10,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Column="0" Margin="0,0,5,0" x:Name="lat" Header="Latitude"/>
+            <TextBox Grid.Column="1" Margin="5,0,0,0" x:Name="lng" Header="Longitude"/>
+        </Grid>
+        <Grid Margin="0,10,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Grid.Column="0" Margin="0,0,5,0" x:Name="dimX" Header="Largura"/>
+            <TextBox Grid.Column="1" Margin="5,0,5,0" x:Name="dimY" Header="Comprimento"/>
+            <TextBox Grid.Column="2" Margin="5,0,0,0" x:Name="dimZ" Header="Altura"/>
+        </Grid>
+        <ProgressBar x:Name="progressBar" IsIndeterminate="True" Visibility="Collapsed" Foreground="{StaticResource SubColor}"/>
+    </StackPanel>
+</ContentDialog>
